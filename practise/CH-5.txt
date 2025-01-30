@@ -1,0 +1,48 @@
+<ctype.h>  // required
+getchar()
+putchar()
+ 
+
+     check keyboard alphabets keys -----> isalpha(character)
+     check keyboard number keys --------> isdigit(character)
+
+---->  %ns limits the output to the first n characters of the string.
+
+Program-A
+       main( ){
+               char address [80] ;
+               printf(YEnter address\h");
+               scanf("%[a-z]" ,address);
+               printf("%-80s\n\n",address);
+       }
+Output:       new delhi, ,110002 (when entered)
+              new delhi
+
+-------------------------------------
+|==>Commonly used Formate codes:    |
+-------------------------------------
+ %c       read a single character
+ %d       read a decimal integer,
+ %e       read a floating pointvalue  --\
+ %f       read a floating point value   used to read floating value  
+ %g       read a floating point value --/
+ %h       read a short integer
+ %i       read a decimal, hexadecimal or octal integer
+ %o       read an octal integer
+ %s       read a string
+ %u       read an unsigned decimal integer
+ %x       read a hexadecimal integer
+ %[..]    read a string of word(s)
+
+
+ To print the data left-justified, we must use %- the field specification.
+example:
+int main() {
+    int num = 25;
+    printf("%-8dHello\n", num);
+    return 0;
+}
+output: 
+25      Hello
+
+

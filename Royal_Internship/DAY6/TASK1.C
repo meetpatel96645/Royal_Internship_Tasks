@@ -45,6 +45,9 @@ mainMenu:
             }
             else
             {
+                /* for (i = 0; i < SIZE; i++){
+
+                 } */
                 fseek(fp, 0L, SEEK_SET);
                 for (i = 0; i < SIZE; i++)
                 {
