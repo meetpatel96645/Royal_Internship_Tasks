@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: url('./images/sea_with_sunset_background_hd_sunset.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.stopwatch {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    min-width: 250px;
+}
+.timer {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.buttons {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+button {
+    font-size: 24px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+button:hover {
+    transform: scale(1.1);
+}
+@media (max-width: 600px) {
+    .stopwatch {
+        width: 50%;
+        padding: 15px;
+    }
+    .timer {
+        font-size: 20px;
+    }
+    button {
+        font-size: 20px;
+    }
+}

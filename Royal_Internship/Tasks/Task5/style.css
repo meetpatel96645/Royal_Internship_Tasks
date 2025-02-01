@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+body {
+    background: url('https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Ym9vayUyMHBlbnxlbnwwfHwwfHx8MA%3D%3D') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.todo-app {
+    background: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    min-width: 280px;
+    max-width: 400px;
+}
+.input-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.add-btn {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 14px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.add-btn:hover {
+    background: #218838;
+}
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+.task {
+    display: flex;
+    justify-content: space-between;
+    background: #f8f9fa;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+.delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+@media (max-width: 600px) {
+    .todo-app {
+        width: 90%;
+    }
+    input[type="text"] {
+        font-size: 14px;
+    }
+}

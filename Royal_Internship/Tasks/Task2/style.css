@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://images.pexels.com/photos/257360/pexels-photo-257360.jpeg?cs=srgb&dl=pexels-pixabay-257360.jpg&fm=jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-button {
+    position: fixed;
+    color: white;
+    background-color: transparent;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+.main-button:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(0, 0, 0);
+}
+.modal {
+    display: block;
+    width: 100px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.close-btn {
+    display: inline-block;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background: green;
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 3px;
+}
